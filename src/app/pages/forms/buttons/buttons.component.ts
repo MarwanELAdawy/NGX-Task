@@ -10,4 +10,8 @@ export class ButtonsComponent {
   statuses: NbComponentStatus[] = [ 'primary', 'success', 'info', 'warning', 'danger' ];
   shapes: NbComponentShape[] = [ 'rectangle', 'semi-round', 'round' ];
   sizes: NbComponentSize[] = [ 'tiny', 'small', 'medium', 'large', 'giant' ];
+  submit() {
+    alert('The Product is add');
+  }
 }
+
