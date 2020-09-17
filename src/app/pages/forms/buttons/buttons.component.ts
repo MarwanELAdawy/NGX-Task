@@ -4,7 +4,7 @@ import { NbComponentShape, NbComponentSize, NbComponentStatus } from '@nebular/t
 @Component({
   selector: 'ngx-buttons',
   styleUrls: ['./buttons.component.scss'],
-  templateUrl: './task.component.html',
+  templateUrl: './buttons.component.html',
 })
 export class ButtonsComponent {
   statuses: NbComponentStatus[] = [ 'primary', 'success', 'info', 'warning', 'danger' ];
