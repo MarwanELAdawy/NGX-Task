@@ -1,0 +1,248 @@
+<div class="row">
+  <div class="col-lg-12">
+    <nb-card>
+      <nb-card-header>
+        1) Basic Info
+      </nb-card-header>
+        <nb-card-body>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="inputFirstName" class="label">Event Name</label>
+                <input type="text" nbInput fullWidth id="inputFirstName">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="datapick" fullWidth class="label">Expire Date</label>
+                <br>
+                <label>
+                  <input nbInput [nbDatepicker]="picker" id="datapick">
+                </label>
+                <nb-datepicker fullWidth #picker ></nb-datepicker>
+                <nb-datepicker #datepicker></nb-datepicker>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="inputEmail" class="label">Event Description</label>
+                <textarea nbInput fullWidth id="inputEmail"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="inputWebsite" class="label">After Payment Message</label>
+                <textarea nbInput fullWidth id="inputWebsite"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <p>Do you want to show this Event on your shop?</p>
+                <nb-radio>Yes</nb-radio>
+                <nb-radio>No</nb-radio>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <p>Do you want the fees to be on the buyer?</p>
+                <nb-radio>Yes</nb-radio>
+                <nb-radio>No</nb-radio>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group">
+                <label style="margin-right: 100px;">Payment Option</label>
+                <nb-checkbox>Cash throughout AMAN</nb-checkbox>
+                <nb-checkbox>Mobile Wallet</nb-checkbox>
+                <nb-checkbox>Mezza</nb-checkbox>
+                <nb-checkbox>Cash Api</nb-checkbox>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Cash Expiry Duration</label>
+                <nb-select fullWidth>
+                  <nb-option value="1">3 Hours</nb-option>
+                  <nb-option value="2">6 Hours</nb-option>
+                  <nb-option value="3">12 Hours</nb-option>
+                  <nb-option value="4">24 Hours</nb-option>
+                  <nb-option value="5">48 Hours</nb-option>
+                </nb-select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Viewing Currency</label>
+                <nb-select fullWidth>
+                  <nb-option value="1">EGP</nb-option>
+                  <nb-option value="2">USD</nb-option>
+                </nb-select>
+              </div>
+            </div>
+          </div>
+        </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>2) Extra Info</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Event Image</p>
+            <button nbButton status="primary" style="width: 80%;height: 40px;margin: auto;"><input type="file" style="width: 100%;height: 20px; opacity: 0"><label style="z-index: 1;position: absolute;">Upload</label></button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputCategory" class="label">Category</label>
+              <input type="text" nbInput fullWidth id="inputCategory">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <p for="inputCategory" class="label">Event Duration</p>
+              <input nbInput
+                     [nbDatepicker]="formpicker">
+              <nb-datepicker #formpicker></nb-datepicker>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputAddress" class="label">Event Address</label>
+              <input type="text" nbInput fullWidth id="inputAddress">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="inputLocation" class="label">Event Location</label>
+              <input type="text" nbInput fullWidth id="inputLocation">
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <label for="inputFacebook" class="label">Facebook Link</label>
+            <input type="text" nbInput fullWidth id="inputFacebook">
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="Delivery" class="label">Delivery Terms</label>
+              <input type="text" nbInput fullWidth id="Delivery">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label for="Return" class="label">Return Terms</label>
+              <input type="text" nbInput fullWidth id="Return">
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>Add Tickets</nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputTicketName" class="label">Ticket Name</label>
+              <input type="text" nbInput id="inputTicketName">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputTicketName" class="label">Please Select a file Browse</label>
+              <button nbButton status="primary" style="width: 80%;height: 40px;margin: auto;"><input type="file" style="width: 100%;height: 20px; opacity: 0"><label style="z-index: 1;position: absolute;">Upload</label></button>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputPrice" class="label">Price</label>
+              <br>
+              <input type="text" nbInput id="inputPrice">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="inputAval" class="label">Available Quantity</label>
+              <input type="text" nbInput id="inputAval">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <label>Do you want to Add extra Buyer info fields to your product?</label>
+            <nb-radio>Yes</nb-radio>
+            <nb-radio>No</nb-radio>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="Quantity" class="label">Max Quantity Per Sale</label>
+              <input type="text" nbInput fullWidth id="Quantity">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="Description" class="label">Ticket Description Name</label>
+              <textarea nbInput fullWidth id="Description" style="height: 40px;"></textarea>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="Expiry" class="label">Ticket Expiry</label>
+              <br>
+              <input nbInput [nbDatepicker]="picker2" id="Expiry">
+              <nb-datepicker fullWidth #picker2 ></nb-datepicker>
+              <nb-datepicker #datepicker></nb-datepicker>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>Buyer Info</nb-card-header>
+      <nb-card-body>
+        <p>Please enter eny additional fields to be filled by buyer</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="Field" class="label">Field Label</label>
+              <input type="text" nbInput fullWidth id="Field">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="ftype" class="label">Field Type</label>
+              <nb-select fullWidth id="ftype">
+                <nb-option>Text</nb-option>
+                <nb-option>Textarea</nb-option>
+                <nb-option>Toggle</nb-option>
+                <nb-option>Number</nb-option>
+                <nb-option>Drop down</nb-option>
+                <nb-option>Multiple Choice</nb-option>
+                <nb-option>Upload File</nb-option>
+                <nb-option>Date and Time</nb-option>
+                <nb-option>Time</nb-option>
+                <nb-option>Date</nb-option>
+              </nb-select>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="Field" class="label">Required</label>
+              <nb-radio>Yes</nb-radio>
+              <nb-radio>No</nb-radio>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+    <div class="col-sm-12" style="display: flex;justify-content: center;">
+      <button nbButton status="success" style="width: 40%" >Submit</button>
+    </div>
+  </div>
+</div>
+
